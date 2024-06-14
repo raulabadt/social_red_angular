@@ -13,26 +13,31 @@
             <div class="input-group">
                 <label for="name">Nombre</label>
                 <input type="text" id="name" maxlength="50" placeholder="Nombre">
-                <span class="char-count">0 / 50</span>
+              
             </div>
             <div class="input-group">
-                <label for="phone">Teléfono</label>
-                <input type="text" id="phone" placeholder="Teléfono">
-                <div class="email-link">
-                    <a href="#">Usar correo</a>
-                </div>
+                <label for="name">Email</label>
+                <input type="mail" id="mail" maxlength="50" placeholder="Mail">
+                
             </div>
+
+            <div class="input-group">
+                <label for="name">Password</label>
+                <input type="password" id="password" maxlength="50" placeholder="Password">
+                
+            </div>
+            
             <div class="input-group">
                 <label>Fecha de nacimiento</label>
                 <p class="info-text">Esta información no será pública. Confirma tu propia edad, incluso si esta cuenta es para una empresa, una mascota u otra cosa.</p>
                 <div class="select-group">
                     <select>
-                        <option value="" disabled selected>Mes</option>
-                        <!-- Add months here -->
+                        <option  value="" disabled selected>Mes</option>
+                       
                     </select>
                     <select>
                         <option value="" disabled selected>Día</option>
-                        <!-- Add days here -->
+                        
                     </select>
                     <select>
                         <option value="" disabled selected>Año</option>
@@ -41,7 +46,7 @@
                 </div>
             </div>
             <div class="submit-group">
-                <button type="submit">Siguiente</button>
+                <button (click)="redirectLogin()" type="submit">Registrar</button>
             </div>
         </form>
     </div>
