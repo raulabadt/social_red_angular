@@ -1,0 +1,139 @@
+body {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.main-content {
+    width: 60%;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    overflow-y: auto;
+}
+.sidebar a, .right-sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+}
+.sidebar a:hover, .right-sidebar a:hover {
+    color: #fff;
+}
+.sidebar i, .right-sidebar i {
+    margin-right: 10px;
+}
+.post-button {
+    background-color: #1da1f2;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
+.search-bar {
+    position: relative;
+}
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    padding-right: 40px;
+}
+.search-bar i {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    color: #aaa;
+}
+.trending, .who-to-follow, .premium {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.trending h2, .who-to-follow h2, .premium h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.trending div, .who-to-follow div {
+    margin-top: 10px;
+}
+.main-content .post {
+    padding: 20px;
+    border-bottom: 1px solid #333;
+}
+.main-content .post img {
+    width: 100%;
+    border-radius: 10px;
+}
+.main-content .post .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.main-content .post .actions div {
+    display: flex;
+    align-items: center;
+    color: #aaa;
+}
+.main-content .post .actions i {
+    margin-right: 5px;
+}
+.main-content .post .actions div:hover {
+    color: #1da1f2;
+}
+.profile-pic {
+    width: 48px;
+    height: 48px;
+    background-color: #444;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.post-author {
+    font-weight: bold;
+}
+.post-handle {
+    color: #aaa;
+}
+.follow-suggestion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.follow-author {
+    font-weight: bold;
+}
+.follow-handle {
+    color: #aaa;
+}
+.follow-button {
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.trend-meta {
+    color: #aaa;
+}
+.trend-title {
+    font-weight: bold;
+}
+.trend-count {
+    color: #aaa;
+}
