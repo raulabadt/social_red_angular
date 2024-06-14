@@ -1,0 +1,79 @@
+/* src/app/app.component.scss */
+
+/* Reset some default styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  background-color: #000;
+  height: 100vh;
+  padding-top: 20px;
+  padding-left: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  position: relative; /* Ensure the navbar is the reference point for absolute positioning */
+
+  /* Add the vertical line */
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -1px;
+    height: 100%;
+    width: 2px; /* Adjust the width of the line */
+    background-color: #555; /* Adjust the color of the line */
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em; /* Adjust size as needed */
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s, color 0.3s;
+
+  i {
+    margin-right: 10px;
+  }
+
+  &:hover {
+    background-color: #333;
+    color: #e4e6eb;
+  }
+
+  &.active {
+    font-weight: bold;
+    background-color: #333;
+    color: #e4e6eb;
+  }
+}
+
+/* Placeholder icons */
+.icon-x:before { content: 'X'; }
+.icon-home:before { content: '\1F3E0'; }
+.icon-explore:before { content: '\1F50D'; }
+.icon-notifications:before { content: '\1F514'; }
+.icon-messages:before { content: '\2709'; }
+.icon-lists:before { content: '\1F4C4'; }
+.icon-bookmarks:before { content: '\1F516'; }
+.icon-communities:before { content: '\1F465'; }
+.icon-premium:before { content: '\2728'; }
+.icon-profile:before { content: '\1F464'; }
+.icon-more:before { content: '\22EF'; }
