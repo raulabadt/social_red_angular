@@ -14,4 +14,8 @@ export class LoginComponent {
     this.router.navigate(['/registro']);
     
   }
+
+  initSession(){
+    this.router.navigate(['/iniciar']);
+  }
 }

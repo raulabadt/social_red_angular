@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 import { PostComponent } from './post/post.component';
 import { CommentsComponent } from './comments/comments.component';
+import { SessionComponent } from './session/session.component';
 
 export const routes: Routes = [
     { path: '', component: AppComponent },
@@ -12,5 +13,6 @@ export const routes: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'registro', component: RegistroComponent },
     { path: 'post', component: PostComponent },
-    { path: 'comments', component: CommentsComponent }
+    { path: 'comments', component: CommentsComponent },
+    { path: 'iniciar', component: SessionComponent }
 ];
