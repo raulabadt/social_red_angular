@@ -8,7 +8,7 @@ import { CommentsComponent } from './comments/comments.component';
 import { SessionComponent } from './session/session.component';
 import { HomepageComponent } from './homepage/homepage.component';
 export const routes: Routes = [
-    { path: '', component: AppComponent },
+    { path: '', component: LoginComponent  },
     { path: 'profile', component: ProfileComponent },
     { path: 'login', component: LoginComponent },
     { path: 'registro', component: RegistroComponent },
