@@ -9,44 +9,22 @@
             </svg>
         </div>
         <h1 class="title">Crea tu cuenta</h1>
-        <form>
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
             <div class="input-group">
                 <label for="name">Nombre</label>
-                <input type="text" id="name" maxlength="50" placeholder="Nombre">
-              
+                <input type="text" id="name" formControlName="name" maxlength="50" placeholder="Nombre">
             </div>
             <div class="input-group">
-                <label for="name">Email</label>
-                <input type="mail" id="mail" maxlength="50" placeholder="Mail">
-                
+                <label for="email">Email</label>
+                <input type="mail" id="mail" formControlName="mail" maxlength="50" placeholder="Mail">
             </div>
-
             <div class="input-group">
-                <label for="name">Password</label>
-                <input type="password" id="password" maxlength="50" placeholder="Password">
-                
+                <label for="password">Password</label>
+                <input type="password" id="password" formControlName="password" maxlength="50" placeholder="Password">
             </div>
-            
-            <div class="input-group">
-                <label>Fecha de nacimiento</label>
-                <p class="info-text">Esta información no será pública. Confirma tu propia edad, incluso si esta cuenta es para una empresa, una mascota u otra cosa.</p>
-                <div class="select-group">
-                    <select>
-                        <option  value="" disabled selected>Mes</option>
-                       
-                    </select>
-                    <select>
-                        <option value="" disabled selected>Día</option>
-                        
-                    </select>
-                    <select>
-                        <option value="" disabled selected>Año</option>
-                        <!-- Add years here -->
-                    </select>
-                </div>
-            </div>
+         
             <div class="submit-group">
-                <button (click)="redirectLogin()" type="submit">Registrar</button>
+                <button type="submit">Registrar</button>
             </div>
         </form>
     </div>
